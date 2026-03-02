@@ -3,251 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elisabeth Novy Photography</title>
+  <title>Impressum – Elisabeth Novy Photography</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav>
-    <a class="nav-logo" href="index.html">Elisabeth Novy Photography</a>
+    <a class="nav-logo" href="index.html">Elisabeth Novy</a>
     <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#about">Über mich</a></li>
+      <li><a href="index.html#contact">Kontakt</a></li>
     </ul>
   </nav>
 
   <main class="page-content">
 
-    <!-- ══════════════════════════
-         HERO SLIDESHOW
-    ══════════════════════════ -->
-    <section class="hero">
-      <div class="hero-title-block">
-        <h1 class="hero-title">Photo and Art Vienna</h1>
-      </div>
-      <div class="hero-image-full">
-        <div class="slideshow" id="hero-show">
-          <!-- Replace these 6 filenames with your chosen hero images -->
-          <div class="slide active" style="background-image: url('images/DSC4511-min.jpg')"></div> <!-- Artwork2 -->
-          <div class="slide" style="background-image: url('images/DSC3820-min.jpg')"></div> <!-- Portrait -->
-          <div class="slide" style="background-image: url('images/DSC9651.jpg')"></div> <!-- Wedding -->
-          <div class="slide" style="background-image: url('images/DSC_1596-2-2-min.jpg')"></div> <!-- Artwork -->
-          <div class="slide" style="background-image: url('images/DSC2990-Edit-Edit-min.jpg')"></div> <!-- Portrait2 -->
-          <div class="slide" style="background-image: url('images/DSC2421.JPG')"></div> <!-- Baby -->
-        </div>
-        <div class="slide-dots" id="hero-dots">
-          <button class="dot active" aria-label="Bild 1"></button>
-          <button class="dot" aria-label="Bild 2"></button>
-          <button class="dot" aria-label="Bild 3"></button>
-          <button class="dot" aria-label="Bild 4"></button>
-          <button class="dot" aria-label="Bild 5"></button>
-          <button class="dot" aria-label="Bild 6"></button>
-        </div>
-        <p class="hero-tagline">Photography &amp; Art · Vienna</p>
-      </div>
-    </section>
+    <section class="impressum-section">
 
-    <!-- ══════════════════════════
-         PORTFOLIO GRID
-         Each card links to its own service page
-    ══════════════════════════ -->
-    <section id="portfolio">
-      <div class="section-header fade-up">
-        <h2 class="section-title">Portfolio</h2>
-      </div>
+      <h1 class="impressum-title">Impressum</h1>
 
-      <div class="portfolio-grid">
+      <div class="impressum-block">
+        <h2>Angaben gemäß § 5 TMG / ECG</h2>
 
-        <!-- CARD 1: Wedding — links to service-wedding.html -->
-        <a class="portfolio-card fade-up" href="service-wedding.html">
-          <div class="pcard-slideshow">
-            <!-- Replace with your 5 wedding photos -->
-            <div class="pslide active" style="background-image: url('images/DSC8560.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/sw_DSC7352-2-min.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC8609.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC8185.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/sw060_DSC2758-Edit-Edit-min.jpg')"></div>
-          </div>
-          <div class="pcard-dots"></div>
-          <div class="pcard-label">
-  <span class="pcard-title">Wedding</span>
-  <span style="font-size:13px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">ab 800€</span>
-  <span class="pcard-arrow">→</span>
-</div>
-        </a>
-
-        <!-- CARD 2: Portrait — links to service-portrait.html -->
-        <a class="portfolio-card fade-up" href="service-portrait.html">
-          <div class="pcard-slideshow">
-            <!-- Replace with your 5 portrait photos -->
-            <div class="pslide active" style="background-image: url('images/DSC098985.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC2990-Edit-Edit-min.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC56468.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC98456.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC8456.JPG')"></div>
-          </div>
-          <div class="pcard-dots"></div>
-          <div class="pcard-label">
-            <span class="pcard-title">Portrait <span style="float:right; font-size:14px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 300€</span></span>
-            <span class="pcard-arrow">→</span>
-          </div>
-        </a>
-
-        <!-- CARD 3: Couple — links to service-couple.html -->
-        <a class="portfolio-card fade-up" href="service-couple.html">
-          <div class="pcard-slideshow">
-            <!-- Replace with your 5 couple photos -->
-            <div class="pslide active" style="background-image: url('images/42100008.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC3748-min.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/sw0407_5988-min.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/25010031.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/SW_DSC3638-2-min.jpg')"></div>
-          </div>
-          <div class="pcard-dots"></div>
-          <div class="pcard-label">
-            <span class="pcard-title">Couple <span style="float:right; font-size:14px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 500€</span></span>
-            <span class="pcard-arrow">→</span>
-          </div>
-        </a>
-
-        <!-- CARD 4: Family — links to service-family.html -->
-        <a class="portfolio-card fade-up" href="service-family.html">
-          <div class="pcard-slideshow">
-            <!-- Replace with your 5 family photos -->
-            <div class="pslide active" style="background-image: url('images/D2C9177-min.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/sw_D2C0915-2-min.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/D2C4650-min.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/sw_D2C1000-2.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/D2C6389-min.jpg')"></div>
-          </div>
-          <div class="pcard-dots"></div>
-          <div class="pcard-label">
-            <span class="pcard-title">Family <span style="float:right; font-size:14px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 250€</span></span>
-            <span class="pcard-arrow">→</span>
-          </div>
-        </a>
-
-        <!-- CARD 5: Commercial — links to service-commercial.html -->
-        <a class="portfolio-card fade-up" href="service-commercial.html">
-          <div class="pcard-slideshow">
-            <!-- Replace with your 5 commercial photos -->
-            <div class="pslide active" style="background-image: url('images/DSC4311_RGB_kl.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC4878.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC123675.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC1952-Edit.JPG')"></div>
-            <div class="pslide" style="background-image: url('images/D2C1229.jpg')"></div>
-          </div>
-          <div class="pcard-dots"></div>
-          <div class="pcard-label">
-            <span class="pcard-title">Commercial</span>
-            <span class="pcard-arrow">→</span>
-          </div>
-        </a>
-
-        <!-- CARD 6: Artwork — links to service-artwork.html -->
-        <a class="portfolio-card fade-up" href="service-artwork.html">
-          <div class="pcard-slideshow">
-            <!-- Replace with your 5 artwork / painted photo images -->
-            <div class="pslide active" style="background-image: url('images/DSC4499-min.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/20260128_122446.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/20260128_122147.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/20241216_114441 1.jpg')"></div>
-            <div class="pslide" style="background-image: url('images/DSC_1576-2-2-min.jpg')"></div>
-          </div>
-          <div class="pcard-dots"></div>
-          <div class="pcard-label">
-            <span class="pcard-title">Artwork <span style="float:right; font-size:14px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 25€</span></span>
-            <span class="pcard-arrow">→</span>
-          </div>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- ══════════════════════════
-         ARTIST STATEMENT
-    ══════════════════════════ -->
-    <section class="quote-band fade-up">
-      <!-- Replace with a moody atmospheric photo -->
-      <img class="quote-band-bg" src="images/28070008.jpg" alt="" aria-hidden="true" />
-      <p class="quote-text">
-        „Die Fotografie ist für mich die Kunst,<br>
-        meinem Eindruck von der Schönheit dieser Welt einen Ausdruck zu geben."
-      </p>
-    </section>
-
-    <!-- ══════════════════════════
-         ABOUT ME
-    ══════════════════════════ -->
-    <section id="about" class="about-layout">
-
-      <div class="about-image-col">
-        <!--
-          Replace with a personal portrait photo of Elisabeth.
-          Example: src="images/elisabeth.jpg"
-        -->
-        <img src="images/DSC0452.jpg" alt="Elisabeth Novy" />
-      </div>
-
-      <div class="about-text-col fade-up">
-        <h2 class="about-name">Elisabeth<br>Novy</h2>
-        <!-- PLACEHOLDER: short subtitle -->
-        <p class="about-tagline">Fotografin &amp; Künstlerin · Wien</p>
-        <div class="about-divider"></div>
-        <!-- PLACEHOLDER: personal intro paragraph -->
-        <p class="about-body">
-           Hallo und herzlich willkommen!
-Mein Name ist Elisabeth und ich bin Künstlerin & Fotografin aus Wien, Österreich.
-Der Ausdruck und die Emotionen von Menschen haben mich schon immer fasziniert.
-Die Stimmungen in der Natur- und Pflanzenwelt sind dabei meine Muse und inspirieren mich jeden Tag aufs Neue.
-Es ist meine Leidenschaft Momente voll Schönheit und Magie einzufangen und aufs Papier zu bringen.
-So erschaffe ich bewegende Menschenbilder verwoben mit der Natur und ihren Rhythmen.
-
-Ich arbeite mit natürlichem Licht auf analogem Filmmaterial im Kleinbild- und Mittelformat. Sowie im digitalen Kleinbildformat.
+        <p>
+          <!-- REPLACE with full name -->
+          Elisabeth Novy<br />
+          <!-- REPLACE with street and number -->
+          Musterstraße 1<br />
+          <!-- REPLACE with postal code and city -->
+          1010 Wien<br />
+          Österreich
         </p>
-        
-        <div class="about-divider"></div>
-        <!-- Replace # with your actual social links -->
-        <div style="display:flex; gap:24px;">
-          <a href="#" style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8b7355;text-decoration:none;">Instagram</a>
-          <a href="#" style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8b7355;text-decoration:none;">LinkedIn</a>
-        </div>
       </div>
 
-    </section>
-
-    <!-- ══════════════════════════
-         CONTACT
-    ══════════════════════════ -->
-    <section class="contact-section" id="contact">
-
-      <div class="fade-up">
-        <h2 class="contact-title">Contact</h2>
-        <!-- PLACEHOLDER: short invitation text -->
-        <p style="font-size:14px;color:#555;max-width:380px;line-height:1.9;margin-bottom:32px;">
-          Du hast eine Idee, ein Projekt, oder möchtest einfach mehr erfahren?
-          Ich freue mich auf deine Nachricht.
+      <div class="impressum-block">
+        <h2>Kontakt</h2>
+        <p>
+          <!-- REPLACE with your phone number, or delete this line -->
+          Telefon: <!-- +43 XXX XXX XXXX --><br />
+          <!-- REPLACE with your email -->
+          E-Mail: <a href="mailto:hello@elisabethnovy.com">hello@elisabethnovy.com</a>
         </p>
-        <div class="contact-info">
-          <span class="contact-label">E-Mail</span>
-          <!-- Replace with real email -->
-          <a href="mailto:hello@elisabethnovy.com">office@enovy.at</a>
-          <span class="contact-label">Standort</span>
-          Wien, Österreich
-          <span class="contact-label">Instagram</span>
-          <!-- Replace with real Instagram -->
-          <a href="https://www.instagram.com/elisabeth_novy_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@elisabeth_novy_photography</a>
-        </div>
       </div>
 
-      <div class="fade-up" style="overflow:hidden;">
-        <!-- Replace with any photo you'd like next to the contact info -->
-        <img src="images/20260128_122324.jpg" alt=""
-          style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;display:block;" />
+      <div class="impressum-block">
+        <h2>Umsatzsteuer-ID</h2>
+        <p>
+          <!-- If applicable: replace with your UID number, otherwise delete this block -->
+          Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:<br />
+          <!-- ATU XXXXXXXX -->
+          <em><!-- Nur ausfüllen falls vorhanden --></em>
+        </p>
+      </div>
+
+      <div class="impressum-block">
+        <h2>Verantwortlich für den Inhalt</h2>
+        <p>
+          <!-- REPLACE with full name and address of the person responsible for content -->
+          Elisabeth Novy<br />
+          <!-- Musterstraße 1, 1010 Wien -->
+        </p>
+      </div>
+
+      <div class="impressum-block">
+        <h2>Urheberrecht</h2>
+        <p>
+          Die auf dieser Website veröffentlichten Inhalte, insbesondere alle Fotografien und
+          künstlerischen Arbeiten, unterliegen dem österreichischen Urheberrecht.
+          Jede Verwendung, Vervielfältigung oder Verbreitung bedarf der ausdrücklichen
+          schriftlichen Zustimmung von Elisabeth Novy.
+        </p>
+      </div>
+
+      <div class="impressum-block">
+        <h2>Haftungsausschluss</h2>
+        <p>
+          Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt.
+          Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch
+          keine Gewähr übernommen. Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG
+          für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+        </p>
+      </div>
+
+      <div class="impressum-block">
+        <h2>Externe Links</h2>
+        <p>
+          Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte
+          kein Einfluss besteht. Für die Inhalte der verlinkten Seiten ist stets der
+          jeweilige Anbieter oder Betreiber verantwortlich.
+        </p>
       </div>
 
     </section>
@@ -260,9 +108,10 @@ Ich arbeite mit natürlichem Licht auf analogem Filmmaterial im Kleinbild- und M
       <p class="footer-sub">Photography &amp; Art · Vienna, Austria</p>
     </div>
     <ul class="footer-nav">
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
+      <li><a href="index.html#about">Über mich</a></li>
+      <li><a href="index.html#contact">Kontakt</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
     </ul>
     <div class="footer-bottom">
       <span><!-- hello@elisabethnovy.com --></span>
@@ -274,61 +123,6 @@ Ich arbeite mit natürlichem Licht auf analogem Filmmaterial im Kleinbild- und M
     function toggleMenu() {
       document.getElementById('navLinks').classList.toggle('open');
     }
-
-    // Scroll fade-in
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 80);
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-    // Hero slideshow
-    (function () {
-      const slides = document.querySelectorAll('#hero-show .slide');
-      const dots = document.querySelectorAll('#hero-dots .dot');
-      let cur = 0;
-      dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
-      function goTo(n) {
-        slides[cur].classList.remove('active'); dots[cur].classList.remove('active');
-        cur = (n + slides.length) % slides.length;
-        slides[cur].classList.add('active'); dots[cur].classList.add('active');
-      }
-      setInterval(() => goTo(cur + 1), 5000);
-    })();
-
-    // Portfolio card slideshows
-    document.querySelectorAll('.portfolio-card').forEach((card, idx) => {
-      const slides = card.querySelectorAll('.pslide');
-      const wrap = card.querySelector('.pcard-dots');
-      let cur = 0;
-      slides.forEach((_, i) => {
-        const d = document.createElement('button');
-        d.className = 'pdot' + (i === 0 ? ' active' : '');
-        d.setAttribute('aria-label', `Bild ${i + 1}`);
-        d.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); goTo(i); });
-        wrap.appendChild(d);
-      });
-      function goTo(n) {
-        const dots = wrap.querySelectorAll('.pdot');
-        slides[cur].classList.remove('active'); dots[cur].classList.remove('active');
-        cur = (n + slides.length) % slides.length;
-        slides[cur].classList.add('active'); dots[cur].classList.add('active');
-      }
-      setInterval(() => goTo(cur + 1), 3500 + idx * 350);
-    });
-
-    // Smooth scroll with nav offset
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-      link.addEventListener('click', e => {
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
-          document.getElementById('navLinks').classList.remove('open');
-        }
-      });
-    });
   </script>
 
 </body>
