@@ -138,17 +138,21 @@ nav {
   height: 100%;
 }
 
-.slide {
+.slideshow {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0;
-  transition: opacity 1.2s ease;
-  will-change: opacity;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.8s ease;
 }
 
-.slide.active { opacity: 1; }
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
 
 .slide-dots {
   position: absolute;
@@ -558,16 +562,21 @@ footer {
   background: var(--light-bg);
 }
 
-.pslide {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center center; /* always shows middle of image */
-  opacity: 0;
-  transition: opacity 1s ease;
+.pcard-slideshow {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.8s ease;
 }
 
-.pslide.active { opacity: 1; }
+.pslide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
 
 /* Dots inside the card */
 .pcard-dots {
