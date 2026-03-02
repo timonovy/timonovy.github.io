@@ -283,43 +283,41 @@ Ich arbeite mit natürlichem Licht auf analogem Filmmaterial im Kleinbild- und M
     }, { threshold: 0.08 });
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
     
-    // Hero slideshow (with swipe support)
+   // Hero slideshow (real swipe animation)
 (function () {
-  const slides = document.querySelectorAll('#hero-show .slide');
-  const dots = document.querySelectorAll('#hero-dots .dot');
   const container = document.getElementById('hero-show');
+  const slides = container.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('#hero-dots .dot');
 
   let cur = 0;
   let startX = 0;
-  let endX = 0;
 
-  dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
-
-  function goTo(n) {
-    slides[cur].classList.remove('active');
-    dots[cur].classList.remove('active');
-    cur = (n + slides.length) % slides.length;
-    slides[cur].classList.add('active');
+  function updateSlide() {
+    container.style.transform = `translateX(-${cur * 100}%)`;
+    dots.forEach(d => d.classList.remove('active'));
     dots[cur].classList.add('active');
   }
 
+  function goTo(n) {
+    cur = (n + slides.length) % slides.length;
+    updateSlide();
+  }
+
+  dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+
   setInterval(() => goTo(cur + 1), 5000);
 
-  // Swipe detection
+  // Swipe
   container.addEventListener('touchstart', e => {
     startX = e.touches[0].clientX;
   });
 
   container.addEventListener('touchend', e => {
-    endX = e.changedTouches[0].clientX;
-    const diff = startX - endX;
+    const diff = startX - e.changedTouches[0].clientX;
 
     if (Math.abs(diff) > 50) {
-      if (diff > 0) {
-        goTo(cur + 1); // swipe left
-      } else {
-        goTo(cur - 1); // swipe right
-      }
+      if (diff > 0) goTo(cur + 1);
+      else goTo(cur - 1);
     }
   });
 })();
