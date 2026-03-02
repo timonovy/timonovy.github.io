@@ -987,3 +987,9 @@ footer {
   .section-header { flex-direction: column; align-items: flex-start; }
   .about-art-section { padding: 60px 24px; }
 }
+
+/* Enable horizontal swipe without blocking vertical scroll */
+.slideshow,
+.pcard-slideshow {
+  touch-action: pan-y;
+}
