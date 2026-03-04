@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elisabeth Novy Photography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Elisabeth Novy Photography</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- ══════════════════════════
+         HERO SLIDESHOW
+    ══════════════════════════ -->
+    <section class="hero">
+      <div class="hero-title-block">
+        <h1 class="hero-title">Photography and Art</h1>
+      </div>
+      <div class="hero-image-full">
+        <div class="slideshow" id="hero-show">
+          <div class="slideshow-strip">
+            <!-- Replace these 6 filenames with your chosen hero images -->
+            <div class="slide" style="background-image: url('images/DSC4511-min.jpg')"></div>
+            <div class="slide" style="background-image: url('images/DSC3820-min.jpg')"></div>
+            <div class="slide" style="background-image: url('images/DSC9651.jpg')"></div>
+            <div class="slide" style="background-image: url('images/DSC_1596-2-2-min.jpg')"></div>
+            <div class="slide" style="background-image: url('images/DSC2990-Edit-Edit-min.jpg')"></div>
+            <div class="slide" style="background-image: url('images/DSC2421.JPG')"></div>
+          </div>
+        </div>
+        <div class="slide-dots" id="hero-dots">
+          <button class="dot active" aria-label="Bild 1"></button>
+          <button class="dot" aria-label="Bild 2"></button>
+          <button class="dot" aria-label="Bild 3"></button>
+          <button class="dot" aria-label="Bild 4"></button>
+          <button class="dot" aria-label="Bild 5"></button>
+          <button class="dot" aria-label="Bild 6"></button>
+        </div>
+        <p class="hero-tagline">Photography &amp; Art · Vienna</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════
+         PORTFOLIO GRID
+         Each card links to its own service page
+    ══════════════════════════ -->
+    <section id="portfolio">
+      <div class="section-header fade-up">
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- CARD 1: Wedding — links to service-wedding.html -->
+        <a class="portfolio-card fade-up" href="service-wedding.html">
+          <div class="pcard-slideshow">
+          <div class="pcard-strip">
+            <!-- Replace with your 5 wedding photos -->
+            <div class="pslide" style="background-image: url('images/DSC8560.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/sw_DSC7352-2-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC8609.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC8185.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/sw060_DSC2758-Edit-Edit-min.jpg')"></div>
+          
+          </div>
+        </div>
+          <div class="pcard-dots"></div>
+         <div class="pcard-label">
+  <span style="display:flex; flex-direction:column; gap:4px;">
+    <span class="pcard-title">Wedding</span>
+    <span style="font-size:13px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 800€</span>
+    </span>
+<span class="pcard-arrow">→</span>
+</div>
+        </a>
+
+        <!-- CARD 2: Portrait — links to service-portrait.html -->
+        <a class="portfolio-card fade-up" href="service-portrait.html">
+          <div class="pcard-slideshow">
+          <div class="pcard-strip">
+            <!-- Replace with your 5 portrait photos -->
+            <div class="pslide" style="background-image: url('images/DSC098985.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC2990-Edit-Edit-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC56468.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC98456.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC8456.JPG')"></div>
+          
+          </div>
+        </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+  <span style="display:flex; flex-direction:column; gap:4px;">
+    <span class="pcard-title">Portrait</span>
+    <span style="font-size:13px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 300€</span>
+    </span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 3: Couple — links to service-couple.html -->
+        <a class="portfolio-card fade-up" href="service-couple.html">
+          <div class="pcard-slideshow">
+          <div class="pcard-strip">
+            <!-- Replace with your 5 couple photos -->
+            <div class="pslide" style="background-image: url('images/42100008.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC3748-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/sw0407_5988-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/25010031.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/SW_DSC3638-2-min.jpg')"></div>
+          
+          </div>
+        </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+  <span style="display:flex; flex-direction:column; gap:4px;">
+    <span class="pcard-title">Couple</span>
+    <span style="font-size:13px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 400€</span>
+  </span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 4: Family — links to service-family.html -->
+        <a class="portfolio-card fade-up" href="service-family.html">
+          <div class="pcard-slideshow">
+          <div class="pcard-strip">
+            <!-- Replace with your 5 family photos -->
+            <div class="pslide" style="background-image: url('images/DSC2608.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC2421.JPG')"></div>
+            <div class="pslide" style="background-image: url('images/PrG497906.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC9864.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/D2C4650-min.jpg')"></div>
+          
+          </div>
+        </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+  <span style="display:flex; flex-direction:column; gap:4px;">
+    <span class="pcard-title">Family & Kids</span>
+    <span style="font-size:13px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 250€</span>
+  </span>
+  <span class="pcard-arrow">→</span>
+</div>
+        </a>
+
+        <!-- CARD 5: Commercial — links to service-commercial.html -->
+        <a class="portfolio-card fade-up" href="service-commercial.html">
+          <div class="pcard-slideshow">
+          <div class="pcard-strip">
+            <!-- Replace with your 5 commercial photos -->
+            <div class="pslide" style="background-image: url('images/DSC4311_RGB_kl.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC4878.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC123675.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC1952-Edit.JPG')"></div>
+            <div class="pslide" style="background-image: url('images/D2C1229.jpg')"></div>
+          
+          </div>
+        </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+  <span style="display:flex; flex-direction:column; gap:4px;">
+    <span class="pcard-title">Commercial</span>
+    <span style="font-size:13px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">price on request</span>
+  </span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CARD 6: Artwork — links to service-artwork.html -->
+        <a class="portfolio-card fade-up" href="service-artwork.html">
+          <div class="pcard-slideshow">
+          <div class="pcard-strip">
+            <!-- Replace with your 5 artwork / painted photo images -->
+            <div class="pslide" style="background-image: url('images/DSC4499-min.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/20260128_122446.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/20260128_122147.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/20241216_114441 1.jpg')"></div>
+            <div class="pslide" style="background-image: url('images/DSC_1576-2-2-min.jpg')"></div>
+          
+          </div>
+        </div>
+          <div class="pcard-dots"></div>
+          <div class="pcard-label">
+  <span style="display:flex; flex-direction:column; gap:4px;">
+    <span class="pcard-title">Artwork</span>
+    <span style="font-size:13px; font-weight:300; color:#8b7355; font-family:'Jost',sans-serif; letter-spacing:0.05em;">from 50€</span>
+  </span>
+            <span class="pcard-arrow">→</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════
+         ARTIST STATEMENT
+    ══════════════════════════ -->
+    <section class="quote-band fade-up">
+      <!-- Replace with a moody atmospheric photo -->
+      <img class="quote-band-bg" src="images/28070008.jpg" alt="" aria-hidden="true" />
+      <p class="quote-text">
+        „Die Fotografie ist für mich die Kunst,<br>
+        meinem Eindruck von der Schönheit dieser Welt einen Ausdruck zu geben."
+      </p>
+    </section>
+
+    <!-- ══════════════════════════
+         ABOUT ME
+    ══════════════════════════ -->
+    <section id="about" class="about-layout">
+
+      <div class="about-image-col">
+        <!--
+          Replace with a personal portrait photo of Elisabeth.
+          Example: src="images/elisabeth.jpg"
+        -->
+        <img src="images/DSC0452.jpg" alt="Elisabeth Novy" />
+      </div>
+
+      <div class="about-text-col fade-up">
+        <h2 class="about-name">Elisabeth<br>Novy</h2>
+        <!-- PLACEHOLDER: short subtitle -->
+        <p class="about-tagline">Fotografin &amp; Künstlerin · Wien</p>
+        <div class="about-divider"></div>
+        <!-- PLACEHOLDER: personal intro paragraph -->
+        <p class="about-body">
+           Hallo und herzlich willkommen!
+Mein Name ist Elisabeth und ich bin Künstlerin & Fotografin aus Wien, Österreich.
+Der Ausdruck und die Emotionen von Menschen haben mich schon immer fasziniert.
+Die Stimmungen in der Natur- und Pflanzenwelt sind dabei meine Muse und inspirieren mich jeden Tag aufs Neue.
+Es ist meine Leidenschaft Momente voll Schönheit und Magie einzufangen und aufs Papier zu bringen.
+So erschaffe ich bewegende Menschenbilder verwoben mit der Natur und ihren Rhythmen.
+
+Ich arbeite mit natürlichem Licht auf analogem Filmmaterial im Kleinbild- und Mittelformat. Sowie im digitalen Kleinbildformat.
+        </p>
+        
+        <div class="about-divider"></div>
+        <!-- Replace # with your actual social links -->
+        <div style="display:flex; gap:24px;">
+          <a href="https://www.instagram.com/elisabeth_novy_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8b7355;text-decoration:none;">Instagram</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════════
+         CONTACT
+    ══════════════════════════ -->
+    <section class="contact-section" id="contact">
+
+      <div class="fade-up">
+        <h2 class="contact-title">Contact</h2>
+        <!-- PLACEHOLDER: short invitation text -->
+        <p style="font-size:14px;color:#555;max-width:380px;line-height:1.9;margin-bottom:32px;">
+          Du hast eine Idee, ein Projekt, oder möchtest einfach mehr erfahren?
+          Ich freue mich auf deine Nachricht.
+        </p>
+        <div class="contact-info">
+          <span class="contact-label">E-Mail</span>
+          <!-- Replace with real email -->
+          <a href="/cdn-cgi/l/email-protection#365950505f555376535859404f185742"><span class="__cf_email__" data-cfemail="2e414848474d4b6e4b40415857004f5a">[email&#160;protected]</span></a>
+          <span class="contact-label">Phone</span>
+          +43 69912365944
+          <span class="contact-label">Standort</span>
+          Wien, Österreich
+          <span class="contact-label">Instagram</span>
+          <!-- Replace with real Instagram -->
+          <a href="https://www.instagram.com/elisabeth_novy_photography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@elisabeth_novy_photography</a>
+        </div>
+      </div>
+
+      <div class="fade-up" style="overflow:hidden;">
+        <!-- Replace with any photo you'd like next to the contact info -->
+        <img src="images/20260128_122324.jpg" alt=""
+          style="width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;display:block;" />
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <p class="footer-logo">Elisabeth Novy</p>
+      <p class="footer-sub">Photography &amp; Art · Vienna, Austria</p>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer-bottom">
+      <span><!-- hello@elisabethnovy.com --></span>
+      <span>© 2025 Elisabeth Novy</span>
+    </div>
+  </footer>
+
+  <script>
+  // ── Helpers ──────────────────────────────────────────────────────────────
+
+  /**
+   * Makes any element a swipeable horizontal slideshow.
+   *
+   * @param {Element} container   The outer wrapper (overflow:hidden)
+   * @param {Element} strip       The flex strip containing the slides
+   * @param {NodeList} dots       Dot buttons to keep in sync
+   * @param {number}  autoMs      Auto-advance interval in ms (0 = no auto)
+   * @param {number}  staggerMs   Extra delay offset for staggered auto-advance
+   */
+  function makeSwipeable(container, strip, dots, autoMs, staggerMs) {
+    const total = strip.children.length;
+    let cur = 0;
+    let autoTimer = null;
+
+    // ── dot clicks ──
+    if (dots) {
+      Array.from(dots).forEach((d, i) => {
+        d.addEventListener('click', e => {
+          e.preventDefault();
+          e.stopPropagation();
+          goTo(i);
+        });
+      });
+    }
+
+    function setDots(n) {
+      if (!dots) return;
+      Array.from(dots).forEach((d, i) => d.classList.toggle('active', i === n));
+    }
+
+    function goTo(n, suppressReset) {
+      cur = (n + total) % total;
+      strip.style.transform = `translateX(-${cur * 100}%)`;
+      setDots(cur);
+      if (!suppressReset && autoMs) resetAuto();
+    }
+
+    function resetAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(() => goTo(cur + 1, true), autoMs);
+    }
+
+    if (autoMs) {
+      // Stagger so all cards don't flip at the same time
+      setTimeout(() => resetAuto(), staggerMs || 0);
+    }
+
+    // ── Touch & mouse drag ────────────────────────────────────────────────
+    let startX = 0;
+    let startY = 0;
+    let dragX = 0;
+    let isDragging = false;
+    let lockAxis = null; // 'x' | 'y' | null
+
+    const THRESHOLD = 40; // px needed to commit a swipe
+
+    function onDragStart(clientX, clientY) {
+      startX = clientX;
+      startY = clientY;
+      dragX = 0;
+      isDragging = true;
+      lockAxis = null;
+      strip.classList.add('dragging');
+    }
+
+    function onDragMove(clientX, clientY) {
+      if (!isDragging) return;
+      const dx = clientX - startX;
+      const dy = clientY - startY;
+
+      // Determine scroll axis on first significant move
+      if (!lockAxis && (Math.abs(dx) > 5 || Math.abs(dy) > 5)) {
+        lockAxis = Math.abs(dx) >= Math.abs(dy) ? 'x' : 'y';
+      }
+
+      if (lockAxis !== 'x') return;
+
+      dragX = dx;
+      // Move strip in real-time with the finger
+      const base = -cur * 100; // percent
+      const offset = (dragX / container.offsetWidth) * 100;
+      strip.style.transform = `translateX(calc(${base}% + ${dragX}px))`;
+    }
+
+    function onDragEnd() {
+      if (!isDragging) return;
+      isDragging = false;
+      strip.classList.remove('dragging');
+
+      if (lockAxis === 'x') {
+        if (dragX < -THRESHOLD) {
+          goTo(cur + 1);
+        } else if (dragX > THRESHOLD) {
+          goTo(cur - 1);
+        } else {
+          // Snap back
+          goTo(cur);
+        }
+      } else {
+        // Was a vertical scroll — snap back without changing slide
+        goTo(cur);
+      }
+      dragX = 0;
+      lockAxis = null;
+    }
+
+    // Touch events
+    container.addEventListener('touchstart', e => {
+      onDragStart(e.touches[0].clientX, e.touches[0].clientY);
+    }, { passive: true });
+
+    container.addEventListener('touchmove', e => {
+      if (lockAxis === 'x') e.preventDefault(); // prevent page scroll only when swiping horizontally
+      onDragMove(e.touches[0].clientX, e.touches[0].clientY);
+    }, { passive: false });
+
+    container.addEventListener('touchend', onDragEnd);
+    container.addEventListener('touchcancel', onDragEnd);
+
+    // Mouse events (desktop drag)
+    container.addEventListener('mousedown', e => {
+      onDragStart(e.clientX, e.clientY);
+      e.preventDefault();
+    });
+    window.addEventListener('mousemove', e => {
+      if (isDragging) onDragMove(e.clientX, e.clientY);
+    });
+    window.addEventListener('mouseup', () => {
+      if (isDragging) onDragEnd();
+    });
+
+    // Prevent link navigation when drag happened
+    container.addEventListener('click', e => {
+      if (Math.abs(dragX) > 5) e.preventDefault();
+    });
+
+    // Init position
+    goTo(0, true);
+  }
+
+  // ── Mobile menu ───────────────────────────────────────────────────────────
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  // ── Scroll fade-in ────────────────────────────────────────────────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 80);
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // ── Hero slideshow ────────────────────────────────────────────────────────
+  (function () {
+    const container = document.getElementById('hero-show');
+    const strip     = container.querySelector('.slideshow-strip');
+    const dots      = document.querySelectorAll('#hero-dots .dot');
+    makeSwipeable(container, strip, dots, 5000, 0);
+  })();
+
+  // ── Portfolio card slideshows ─────────────────────────────────────────────
+  document.querySelectorAll('.portfolio-card').forEach((card, idx) => {
+    const container = card.querySelector('.pcard-slideshow');
+    const strip     = container.querySelector('.pcard-strip');
+    const dotsWrap  = card.querySelector('.pcard-dots');
+    const slideCount = strip.children.length;
+
+    // Build dots dynamically
+    for (let i = 0; i < slideCount; i++) {
+      const d = document.createElement('button');
+      d.className = 'pdot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', `Bild ${i + 1}`);
+      dotsWrap.appendChild(d);
+    }
+
+    const dots = dotsWrap.querySelectorAll('.pdot');
+    makeSwipeable(container, strip, dots, 3500, idx * 350);
+  });
+
+  // ── Smooth scroll with nav offset ─────────────────────────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+        document.getElementById('navLinks').classList.remove('open');
+      }
+    });
+  });
+</script><script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Hero slideshow
+    (function () {
+      const slides = document.querySelectorAll('#hero-show .slide');
+      const dots = document.querySelectorAll('#hero-dots .dot');
+      let cur = 0;
+      dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
+      function goTo(n) {
+        slides[cur].classList.remove('active'); dots[cur].classList.remove('active');
+        cur = (n + slides.length) % slides.length;
+        slides[cur].classList.add('active'); dots[cur].classList.add('active');
+      }
+      setInterval(() => goTo(cur + 1), 5000);
+    })();
+
+    // Portfolio card slideshows
+    document.querySelectorAll('.portfolio-card').forEach((card, idx) => {
+      const slides = card.querySelectorAll('.pslide');
+      const wrap = card.querySelector('.pcard-dots');
+      let cur = 0;
+      slides.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 'pdot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', `Bild ${i + 1}`);
+        d.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); goTo(i); });
+        wrap.appendChild(d);
+      });
+      function goTo(n) {
+        const dots = wrap.querySelectorAll('.pdot');
+        slides[cur].classList.remove('active'); dots[cur].classList.remove('active');
+        cur = (n + slides.length) % slides.length;
+        slides[cur].classList.add('active'); dots[cur].classList.add('active');
+      }
+      setInterval(() => goTo(cur + 1), 3500 + idx * 350);
+    });
+
+    // Smooth scroll with nav offset
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+        
